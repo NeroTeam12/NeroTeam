@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moja strona</title>
+    <style>
+      /* style dla paska nawigacji */
+      nav {
+        background-color: #333; /* kolor tła */
+        color: white; /* kolor tekstu */
+        height: 50px; /* wysokość paska */
+        display: flex; /* ustawienie elementów w linii */
+        justify-content: space-between; /* odstęp między elementami */
+        align-items: center; /* wyrównanie elementów w pionie */
+        padding: 0 20px; /* margines wewnętrzny */
+      }
+      
+      /* style dla linków nawigacji */
+      nav a {
+        color: white; /* kolor tekstu */
+        text-decoration: none; /* usunięcie podkreślenia */
+        font-size: 18px; /* rozmiar czcionki */
+        margin-left: 20px; /* margines z lewej strony */
+      }
+      
+      /* style dla aktywnego linku nawigacji */
+      nav a.active {
+        font-weight: bold; /* pogrubienie tekstu */
+        text-decoration: underline; /* podkreślenie tekstu */
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav>
+      <div>Logo</div>
+      <div>
+        <a href="#" class="active">Strona główna</a>
+        <a href="#">O nas</a>
+        <a href="#">Kontakt</a>
+      </div>
+    </nav>
+    
+    <!-- reszta zawartości strony -->
+  </body>
+</html>
