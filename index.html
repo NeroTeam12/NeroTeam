@@ -5,8 +5,8 @@
     <style>
       /* style dla paska nawigacji */
       nav {
-        background-color: #333; /* kolor tła */
-        color: white; /* kolor tekstu */
+        background-color: #f5f5f5; /* kolor tła, 4 stopnie jasniejszy niż czarny */
+        color: #111; /* kolor tekstu */
         display: flex; /* ustawienie elementów w linii */
         justify-content: space-between; /* odstęp między elementami */
         align-items: center; /* wyrównanie elementów w pionie */
@@ -16,11 +16,12 @@
         left: 0; /* przyczepienie do lewej krawędzi */
         right: 0; /* przyczepienie do prawej krawędzi */
         height: 50px; /* wysokość paska */
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* cieniutki czarny pasek pod spodem */
       }
       
       /* style dla linków nawigacji */
       nav a {
-        color: white; /* kolor tekstu */
+        color: #111; /* kolor tekstu */
         text-decoration: none; /* usunięcie podkreślenia */
         font-size: 18px; /* rozmiar czcionki */
         margin-left: 20px; /* margines z lewej strony */
