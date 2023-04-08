@@ -7,11 +7,15 @@
       nav {
         background-color: #333; /* kolor tła */
         color: white; /* kolor tekstu */
-        height: 50px; /* wysokość paska */
         display: flex; /* ustawienie elementów w linii */
         justify-content: space-between; /* odstęp między elementami */
         align-items: center; /* wyrównanie elementów w pionie */
         padding: 0 20px; /* margines wewnętrzny */
+        position: fixed; /* ustalenie pozycji paska nawigacji */
+        top: 0; /* przyczepienie do góry strony */
+        left: 0; /* przyczepienie do lewej krawędzi */
+        right: 0; /* przyczepienie do prawej krawędzi */
+        height: 50px; /* wysokość paska */
       }
       
       /* style dla linków nawigacji */
@@ -26,6 +30,19 @@
       nav a.active {
         font-weight: bold; /* pogrubienie tekstu */
         text-decoration: underline; /* podkreślenie tekstu */
+      }
+      
+      /* style dla responsywnego paska nawigacji */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column; /* ustawienie elementów w kolumnie */
+          height: auto; /* automatyczna wysokość */
+          padding: 20px; /* zwiększenie marginesu wewnętrznego */
+        }
+        
+        nav a {
+          margin: 10px 0; /* margines między linkami */
+        }
       }
     </style>
   </head>
